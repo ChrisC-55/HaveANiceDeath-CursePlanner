@@ -1,14 +1,13 @@
 ﻿namespace HaveANiceDeath.Models
 {
-    public class Curse
+    public class AddCurseViewModel
     {
-        public int CurseID { get; set; }
         public string CurseName { get; set; }
         public string CurseColor { get; set; }
         public string CurseRarity { get; set; }
         public string CurseType { get; set; }
         public string CurseDescription { get; set; }
         public int CurseRank { get; set; }
-        public string CurseImagePath { get; set; }
+        public IFormFile CurseImage { get; set; }
     }
 }

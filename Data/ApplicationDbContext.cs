@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using HaveANiceDeath.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace HaveANiceDeath.Data
@@ -9,5 +10,7 @@ namespace HaveANiceDeath.Data
             : base(options)
         {
         }
+
+        public DbSet<Curse> Curses { get; set; }
     }
 }

@@ -1,0 +1,79 @@
+﻿@model AddCurseViewModel
+
+<form asp-action="AddCurse" asp-controller="Curse" method="post" enctype="multipart/form-data">
+	<div class="form-group">
+		<label asp-for="CurseName">Enter Curse Name:</label>
+		<input asp-for="CurseName" class="form-control"/>
+	</div>
+	<div class="form-group">
+		<label asp-for="CurseColor">Choose Curse Color:</label>
+		<select asp-for="CurseColor" class="form-select-sm">
+			<option value="green">Green</option>
+			<option value="red">Red</option>
+			<option value="blue">Blue</option>
+		</select>
+	</div>
+	<div class="form-group">
+		<label asp-for="CurseRarity">Choose Curse Rarity:</label>
+		<select asp-for="CurseRarity" class="form-select-sm">
+			<option value="common">Common</option>
+			<option value="uncommon">Uncommon</option>
+			<option value="rare">Rare</option>
+			<option value="epic">Epic</option>
+			<option value="legendary">Legendary</option>
+		</select>
+	</div>
+	<div class="form-group">
+		<label asp-for="CurseType">Choose Curse Type:</label>
+		<select asp-for="CurseType" class="form-select-sm">
+			<option value="scythe damage">Sycthe Damage</option>
+			<option value="life insurance">Life Insurance</option>
+			<option value="inflation">Inflation</option>
+			<option value="cloak damage">Cloak Damage</option>
+			<option value="cloakwish">Cloakwish</option>
+			<option value="ceasefire">Ceasefire</option>
+			<option value="pierce">Pierce</option>
+			<option value="termination">Termination</option>
+			<option value="frozen">Frozen</option>
+			<option value="sinister gear">Sinister Gear</option>
+			<option value="bleed">Bleed</option>
+			<option value="backstab">Backstab</option>
+			<option value="critical">Critical</option>
+			<option value="retaliate">Retaliate</option>
+			<option value="other">Other</option>
+			<option value="periodic">Periodic</option>
+			<option value="frenzy">Frenzy</option>
+			<option value="damage">Non-specific Damage</option>
+			<option value="otherInfuse">Non-unique Infuse</option>
+			<option value="maxHP">Max HP</option>
+			<option value="healing">Healing</option>
+			<option value="poison">Poison</option>
+			<option value="burn">Burn</option>
+			<option value="defense">Defense</option>
+			<option value="maxMP">Max MP</option>
+			<option value="spell damage">Spell Damage</option>
+			<option value="mana regen">Mana Regen</option>
+			<option value="lightning">Lightning</option>
+		</select>
+	</div>
+	<div class="form-group">
+		<label asp-for="CurseDescription">Enter Curse Description</label>
+		<input style="height:75px; width: 200px" asp-for="CurseDescription" class="form-control"/>
+	</div>
+	<div class="form-group">
+		<label asp-for="CurseRank">Choose Curse Rank</label>
+		<select asp-for="CurseRank" class="form-select-sm">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+		</select>
+	</div>
+	<div class="form-group">
+		<label asp-for="CurseImage">Upload Curse Image</label>
+		<input asp-for="CurseImage" type="file" class="form-control" />
+	</div>
+	<input type="submit" value="Add Curse" />
+</form>
